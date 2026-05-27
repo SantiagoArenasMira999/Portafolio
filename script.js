@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas?.getContext('2d');
     
     let particlesArray = [];
-    const colors = ['rgba(139, 92, 246, 0.25)', 'rgba(99, 102, 241, 0.2)', 'rgba(16, 185, 129, 0.15)'];
+    // Partículas en blanco para un fondo más sobrio
+    const colors = ['rgba(255,255,255,0.9)', 'rgba(255,255,255,0.6)', 'rgba(255,255,255,0.35)'];
     
     const mouse = {
         x: null,
@@ -177,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     if (distance < 110) {
                         opacityValue = 1 - (distance / 110);
-                        ctx.strokeStyle = `rgba(139, 92, 246, ${opacityValue * 0.08})`;
+                        ctx.strokeStyle = `rgba(255,255,255, ${opacityValue * 0.06})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);

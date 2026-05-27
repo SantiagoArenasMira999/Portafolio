@@ -2,30 +2,30 @@
    ESTILOS PREMIUM - SANTIAGO ARENAS MIRA PORTAFOLIO
    ========================================================================== */
 
-/* Variables del Sistema de Diseño (Paleta de color neón y oscura estilo GymManager) */
+/* Variables del Sistema de Diseño (Paleta Profesional SaaS Premium) */
 :root {
     --bg-dark: #000000;
     --bg-surface: #121212;
     --bg-surface-hover: #1e1e1e;
     
-    --primary: #BBFF00;       /* GymManager Neon Yellow */
-    --primary-glow: rgba(187, 255, 0, 0.35);
-    --secondary: #00E0FF;     /* GymManager Cyan */
-    --secondary-glow: rgba(0, 224, 255, 0.3);
-    --accent: #00E0FF;
+    --primary: #E9B33B;       /* Amarillo cálido profesional */
+    --primary-glow: rgba(233, 179, 59, 0.18);
+    --secondary: #E9B33B;     /* Usamos el mismo tono cálido, sin neón */
+    --secondary-glow: rgba(233, 179, 59, 0.12);
+    --accent: #E9B33B;
     
     --text-primary: #ffffff;
     --text-muted: #94A3B8;
     --text-inverse: #000000;
     
     --border-color: #262626;
-    --border-hover: rgba(187, 255, 0, 0.4);
+    --border-hover: rgba(233, 179, 59, 0.22);
     
     --bg-card: #121212;
     --bg-input: #1e1e1e;
-    --glass: rgba(187, 255, 0, 0.05);
+    --glass: rgba(233, 179, 59, 0.03);
     --danger: #ef4444;
-    --success: #BBFF00;
+    --success: #E9B33B;
     
     --font-heading: 'Outfit', 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -64,7 +64,7 @@ body {
     background: var(--bg-dark);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(187, 255, 0, 0.2);
+    background: rgba(233, 179, 59, 0.12);
     border-radius: 5px;
     border: 2px solid var(--bg-dark);
 }
@@ -260,8 +260,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(187, 255, 0, 0.08);
-    border: 1px solid rgba(187, 255, 0, 0.25);
+    background: rgba(233, 179, 59, 0.06);
+    border: 1px solid rgba(233, 179, 59, 0.16);
     color: var(--primary);
     font-size: 0.85rem;
     font-weight: 500;
@@ -331,13 +331,13 @@ body {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     color: var(--text-inverse);
-    box-shadow: 0 4px 20px rgba(187, 255, 0, 0.35);
+    box-shadow: 0 4px 18px rgba(233, 179, 59, 0.12);
     border: none;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(187, 255, 0, 0.5);
+    box-shadow: 0 6px 22px rgba(233, 179, 59, 0.14);
 }
 
 .btn-secondary {
@@ -367,7 +367,7 @@ body {
     border-radius: 50%;
     padding: 5px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
-    box-shadow: 0 10px 40px rgba(0, 224, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(233, 179, 59, 0.06);
     z-index: 1;
 }
 
@@ -379,8 +379,8 @@ body {
     bottom: -8px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--primary), var(--accent));
-    filter: blur(25px);
-    opacity: 0.6;
+    filter: blur(22px);
+    opacity: 0.32;
     z-index: -1;
     animation: pulsateGlow 6s infinite alternate ease-in-out;
 }
@@ -561,7 +561,7 @@ body {
 .stat-card:hover {
     transform: translateY(-5px);
     border-color: var(--border-hover);
-    box-shadow: 0 8px 25px rgba(187, 255, 0, 0.12);
+    box-shadow: 0 8px 25px rgba(233, 179, 59, 0.06);
 }
 
 .stat-num {
@@ -585,7 +585,7 @@ body {
 .quote-card {
     position: relative;
     background: linear-gradient(135deg, rgba(30, 27, 75, 0.4) 0%, rgba(17, 24, 39, 0.6) 100%);
-    border: 1px solid rgba(187, 255, 0, 0.2);
+    border: 1px solid rgba(233, 179, 59, 0.12);
     border-radius: 20px;
     padding: 3rem 2rem;
     text-align: center;
@@ -641,7 +641,7 @@ body {
 .project-card:hover {
     transform: translateY(-8px);
     border-color: var(--border-hover);
-    box-shadow: 0 15px 35px rgba(187, 255, 0, 0.15);
+    box-shadow: 0 15px 35px rgba(233, 179, 59, 0.08);
 }
 
 .project-header {
@@ -669,9 +669,9 @@ body {
 }
 
 /* Estilos específicos de tags */
-.tag-android { background: rgba(16, 185, 129, 0.08); border-color: rgba(16, 185, 129, 0.25); color: #34d399; }
-.tag-backend { background: rgba(0, 224, 255, 0.08); border-color: rgba(0, 224, 255, 0.25); color: #67e8f9; }
-.tag-web { background: rgba(187, 255, 0, 0.08); border-color: rgba(187, 255, 0, 0.25); color: var(--primary); }
+.tag-android { background: rgba(233, 179, 59, 0.06); border-color: rgba(233, 179, 59, 0.12); color: #e9b33b; }
+.tag-backend { background: rgba(233, 179, 59, 0.05); border-color: rgba(233, 179, 59, 0.10); color: #e9b33b; }
+.tag-web { background: rgba(233, 179, 59, 0.06); border-color: rgba(233, 179, 59, 0.16); color: var(--primary); }
 .tag-css { background: rgba(236, 72, 153, 0.08); border-color: rgba(236, 72, 153, 0.25); color: #f472b6; }
 .tag-ts { background: rgba(59, 130, 246, 0.08); border-color: rgba(59, 130, 246, 0.25); color: #60a5fa; }
 
@@ -775,7 +775,7 @@ body {
 .skill-category-card:hover {
     transform: translateY(-8px);
     border-color: var(--border-hover);
-    box-shadow: 0 15px 35px rgba(187, 255, 0, 0.12);
+    box-shadow: 0 15px 35px rgba(233, 179, 59, 0.06);
 }
 
 .category-icon-wrapper {
@@ -841,8 +841,8 @@ body {
 }
 
 .skill-category-card:hover .skill-items-list li:hover {
-    background: rgba(187, 255, 0, 0.06);
-    border-color: rgba(187, 255, 0, 0.15);
+    background: rgba(233, 179, 59, 0.05);
+    border-color: rgba(233, 179, 59, 0.12);
     color: var(--primary);
     transform: scale(1.03);
 }
@@ -853,8 +853,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
     border-radius: 24px;
-    background: linear-gradient(135deg, rgba(187, 255, 0, 0.08) 0%, rgba(0, 224, 255, 0.05) 100%);
-    border: 1px solid rgba(187, 255, 0, 0.2);
+    background: linear-gradient(135deg, rgba(233, 179, 59, 0.06) 0%, rgba(233, 179, 59, 0.03) 100%);
+    border: 1px solid rgba(233, 179, 59, 0.12);
     padding: 4rem 3rem;
     overflow: hidden;
     backdrop-filter: blur(16px);
@@ -869,7 +869,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(187, 255, 0, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(233, 179, 59, 0.08) 0%, transparent 60%);
     pointer-events: none;
     z-index: 0;
 }
@@ -910,8 +910,8 @@ body {
 }
 
 .email-copy-wrapper:hover {
-    border-color: rgba(187, 255, 0, 0.4);
-    box-shadow: 0 0 15px rgba(187, 255, 0, 0.1);
+    border-color: rgba(233, 179, 59, 0.28);
+    box-shadow: 0 0 12px rgba(233, 179, 59, 0.06);
 }
 
 .email-text {
