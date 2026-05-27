@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Arenas Mira | Portafolio Profesional</title>
+    
+    <!-- Meta tags de SEO -->
+    <meta name="description" content="Portafolio profesional de Santiago Arenas Mira, desarrollador de software especializado en aplicaciones completas, Android, Backend y desarrollo frontend experimental.">
+    <meta name="keywords" content="Santiago Arenas, Santiago Arenas Mira, SantiagoArenasMira999, GymManager-TFG, desarrollador web, Android, Backend, frontend, portafolio">
+    <meta name="author" content="Santiago Arenas Mira">
+    
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Santiago Arenas Mira | Portafolio Profesional">
+    <meta property="og:description" content="Explora el ecosistema de proyectos, TFG de gestión de gimnasios y experimentos de frontend interactivo de Santiago Arenas.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/190086471?v=4">
+    <meta property="og:url" content="https://github.com/SantiagoArenasMira999">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Santiago Arenas Mira | Portafolio Profesional">
+    <meta name="twitter:description" content="Portafolio profesional de desarrollo de software y experimentos de diseño interactivo.">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/190086471?v=4">
+
+    <!-- Fuentes Premium de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Hoja de Estilo del Portafolio -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Canvas para Partículas de Fondo -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Fondo de Resplandor Neón de Fondo (Glows) -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navegación Premium -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-symbol">&lt;</span>Santi.dev<span class="logo-symbol">/&gt;</span>
+            </a>
+            
+            <!-- Botón de Menú Móvil -->
+            <button class="mobile-nav-toggle" aria-label="Abrir menú" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> Sobre Mí</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-code"></i> Proyectos</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i> Habilidades</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <header id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge fade-in-init">
+                    <span class="badge-dot"></span> Disponible para nuevos desafíos
+                </div>
+                <h1 class="hero-title fade-in-init">
+                    Hola, soy <span class="text-gradient">Santiago Arenas</span>
+                </h1>
+                <h2 class="hero-subtitle fade-in-init">
+                    Desarrollador <span id="typewriter" class="text-accent"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description fade-in-init">
+                    Ingeniero de software con pasión por el diseño interactivo y la creación de ecosistemas digitales completos. Combino potencia técnica en backend y móvil con elegancia visual en frontend.
+                </p>
+                <div class="hero-actions fade-in-init">
+                    <a href="#projects" class="btn btn-primary">
+                        Ver Proyectos <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Hablemos <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-init">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <img src="https://avatars.githubusercontent.com/u/190086471?v=4" alt="Santiago Arenas Mira Avatar" class="avatar-image">
+                </div>
+                <div class="floating-tech-card tech-card-1">
+                    <i class="fa-brands fa-android text-emerald"></i>
+                    <span>Android Dev</span>
+                </div>
+                <div class="floating-tech-card tech-card-2">
+                    <i class="fa-brands fa-css3-alt text-violet"></i>
+                    <span>CSS Lab</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <span>Desliza para explorar</span>
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Descubre mi trayectoria</span>
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="section-bar"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info">
+                    <h3>Pasión por el código y el diseño</h3>
+                    <p>Soy un desarrollador de software enfocado en crear soluciones completas y escalables. Me apasiona resolver problemas complejos de backend al mismo tiempo que dedico especial atención a los detalles estéticos del diseño de interfaces.</p>
+                    <p>Mi objetivo constante es llevar la experiencia de usuario a niveles superiores, explorando animaciones avanzadas y diseños inmersivos sin comprometer el rendimiento técnico.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-num text-gradient">TFG</div>
+                            <div class="stat-label">GymManager Ecosystem</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num text-gradient">API</div>
+                            <div class="stat-label">Integración Backend</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-quote">
+                    <div class="quote-card">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="quote-text">Busco el equilibrio perfecto entre la arquitectura del código, la estabilidad del backend y la interactividad en la interfaz de usuario.</p>
+                        <span class="quote-author">— Santiago Arenas Mira</span>
+                        <div class="quote-decor"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mis trabajos y código</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="section-bar"></div>
+            </div>
+            
+            <!-- Grid de Proyectos -->
+            <div class="projects-grid">
+                <!-- Proyecto 1: GymManager-TFG -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-header">
+                        <div class="project-tags">
+                            <span class="tag tag-android">Kotlin / Java</span>
+                            <span class="tag tag-backend">Backend API</span>
+                            <span class="tag tag-web">Web Client</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SantiagoArenasMira999/GymManager-TFG" target="_blank" aria-label="Ver código en GitHub" class="project-link-btn">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">GymManager-TFG</h3>
+                        <p class="project-description">
+                            Trabajo de Fin de Grado (TFG). Un robusto sistema integral para la gestión de gimnasios y centros deportivos. Cuenta con una aplicación móvil nativa para socios, un portal de administración web responsive, y una potente API backend para la sincronización en tiempo real y el manejo seguro de datos de clientes, planes y reservas.
+                        </p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-meta"><i class="fa-regular fa-folder-open"></i> Ecosistema Completo</span>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3: Portafolio -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-header">
+                        <div class="project-tags">
+                            <span class="tag tag-ts">TypeScript</span>
+                            <span class="tag tag-react">Frontend</span>
+                            <span class="tag tag-host">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://portafolio-omega-flax.vercel.app" target="_blank" aria-label="Ver sitio web" class="project-link-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/SantiagoArenasMira999/Portafolio" target="_blank" aria-label="Ver código en GitHub" class="project-link-btn">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Portafolio Web Moderno</h3>
+                        <p class="project-description">
+                            Sitio web de presentación personal desarrollado con una sólida arquitectura en TypeScript, estructurando de manera escalable e interactiva las secciones de experiencia, proyectos y enlaces del perfil. Desplegado y optimizado con alto rendimiento en la plataforma Vercel.
+                        </p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-meta"><i class="fa-solid fa-globe"></i> Web en Producción</span>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4: zintrx -->
+                <article class="project-card" data-category="other">
+                    <div class="project-header">
+                        <div class="project-tags">
+                            <span class="tag tag-code">Open Source</span>
+                            <span class="tag tag-other">Minimal</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SantiagoArenasMira999/zintrx" target="_blank" aria-label="Ver código en GitHub" class="project-link-btn">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">zintrx</h3>
+                        <p class="project-description">
+                            Proyecto de base minimalista para el desarrollo e integración estructurada de librerías y utilidades comunes dentro de entornos de desarrollo de código libre.
+                        </p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-meta"><i class="fa-solid fa-box-archive"></i> Repositorio Utilitario</span>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="https://github.com/SantiagoArenasMira999" target="_blank" class="btn btn-github">
+                    <i class="fa-brands fa-github"></i> Ver Todo en GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mis competencias técnicas</span>
+                <h2 class="section-title">Habilidades y Tecnologías</h2>
+                <div class="section-bar"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category-card">
+                    <div class="category-icon-wrapper">
+                        <i class="fa-solid fa-display category-icon text-indigo"></i>
+                    </div>
+                    <h3>Desarrollo Frontend</h3>
+                    <p class="category-desc">Interfaces elegantes, modernas, interactivas y pixel-perfect con rendimiento fluido.</p>
+                    <ul class="skill-items-list">
+                        <li>HTML5 Semántico</li>
+                        <li>CSS3 Avanzado & Keyframes</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>Diseño de Interfaces Web</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category-card">
+                    <div class="category-icon-wrapper">
+                        <i class="fa-solid fa-server category-icon text-emerald"></i>
+                    </div>
+                    <h3>Desarrollo Móvil & Backend</h3>
+                    <p class="category-desc">Creación de arquitecturas sólidas y APIs REST de alto rendimiento para proyectos a gran escala.</p>
+                    <ul class="skill-items-list">
+                        <li>Android Nativo (Kotlin/Java)</li>
+                        <li>Arquitecturas de Software</li>
+                        <li>Creación de API REST</li>
+                        <li>Integración de Base de Datos</li>
+                        <li>Ecosistemas Multiplataforma</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category-card">
+                    <div class="category-icon-wrapper">
+                        <i class="fa-solid fa-screwdriver-wrench category-icon text-violet"></i>
+                    </div>
+                    <h3>Herramientas & Flujo</h3>
+                    <p class="category-desc">Control y despliegue rápido y escalable de aplicaciones con metodologías modernas.</p>
+                    <ul class="skill-items-list">
+                        <li>Git & Control de Versiones</li>
+                        <li>Gestión de Proyectos en GitHub</li>
+                        <li>Pruebas e Integración</li>
+                        <li>Hosting de Producción (Vercel)</li>
+                        <li>Optimización de Carga</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">¿Tienes una idea en mente?</span>
+                <h2 class="section-title">Contacto</h2>
+                <div class="section-bar"></div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-card-inner">
+                    <h3>¡Conectemos y hagamos algo increíble juntos!</h3>
+                    <p>Estoy disponible para colaboraciones en proyectos innovadores, diseño de aplicaciones móviles y optimización de plataformas web.</p>
+                    
+                    <div class="email-copy-wrapper">
+                        <div class="email-text">santia51arenas@gmail.com</div>
+                        <button class="btn-copy" id="btn-copy-email" aria-label="Copiar correo electrónico">
+                            <span class="copy-visible-text"><i class="fa-regular fa-copy"></i> Copiar</span>
+                            <span class="copied-feedback"><i class="fa-solid fa-check"></i> ¡Copiado!</span>
+                        </button>
+                    </div>
+                    
+                    <div class="social-channels">
+                        <a href="https://github.com/SantiagoArenasMira999" target="_blank" class="social-btn" aria-label="GitHub de Santiago">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:santia51arenas@gmail.com" class="social-btn" aria-label="Enviar Correo Electrónico">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Santiago Arenas Mira. Todos los derechos reservados.</p>
+            <p class="footer-tagline">Diseñado con <i class="fa-solid fa-heart text-accent"></i> y código optimizado sin dependencias.</p>
+        </div>
+    </footer>
+
+    <!-- Script del Portafolio -->
+    <script src="script.js"></script>
+</body>
+</html>
